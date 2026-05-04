@@ -4,6 +4,12 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
+    services:
+      mongo:
+        image: mongo:7
+        ports:
+          - 27017:27017
+
 
     steps:
       - name: check repository
@@ -17,4 +23,6 @@ jobs:
 
       - name: run test
         run : npm test
+        env:
+          MONGODB_URI: mongodb://localhost:27017
       
