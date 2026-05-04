@@ -7,10 +7,10 @@ jobs:
 
     steps:
       - name: check repository
-      - uses: actions/checkout@v4
+        uses: actions/checkout@v4
 
       - name: setup node
-      - uses: actions/setup-node@v5
+        uses: actions/setup-node@v5
 
       - name: install dependencies
         run : npm install
