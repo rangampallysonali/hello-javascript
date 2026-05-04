@@ -4,9 +4,10 @@
   "description": "My first Node app",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "node app.js",
+    "test": "node test.js"
   },
   "dependencies": {
-    "mongodb" : "^6.6.0"
+    "mongodb": "^6.6.0"
   }
 }
